@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSB's Favorite Number</title>
+    <script>
+        function checkFavoriteNumber() {
+            var userInput = document.getElementById('favoriteNumber').value;
+
+            if (userInput === '45') {
+                window.location.href = 'almost.html'; 
+            } else {
+                alert('Incorrect! CJY\'s favorite number is not ' + userInput + '. Please try again.'); 
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <p>Question</p>
+
+    <label for="favoriteNumber">CJY's favorite number is:</label>
+    <input type="text" id="favoriteNumber" placeholder="Type your answer here">
+    <button type="button" onclick="checkFavoriteNumber()">Submit</button>
+
+</body>
+</html>
